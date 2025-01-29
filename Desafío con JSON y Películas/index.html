@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas de Terror y Ciencia Ficción</title>
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Películas de Terror y Ciencia Ficción</h1>
+
+    <div class="filtros">
+        <input type="text" id="campoBusqueda" placeholder="Buscar película...">
+        <button class="buscar-btn" id="botonBuscar">Buscar</button>
+        
+        <select id="filtroGenero">
+            <option value="Todos">Todos los Géneros</option>
+            <option value="Ciencia Ficción">Ciencia Ficción</option>
+            <option value="Terror">Terror</option>
+        </select>
+        
+        <button class="filtro" data-genero="Ciencia Ficción">Ciencia Ficción</button>
+        <button class="filtro" data-genero="Terror">Terror</button>
+        <button class="filtro" data-genero="Todos">Mostrar Todos</button>
+
+        <button id="botonOrdenar">Ordenar por Año (Asc)</button>
+    </div>
+
+    <div id="contenedorPeliculas"></div>
+    <p id="mensajeError" style="display: none;">No se encontraron películas.</p>
+</body>
+</html>
